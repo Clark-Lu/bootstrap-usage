@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+    <div th:fragment="nav">
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">笛箫之家</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="/">主页</a></li>
+                                <li><a href="/">关于</a></li>
+                                <li><a href="#contact">联系</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">更多</a></li>
+                                        <li><a href="#">更多</a></li>
+                                        <li><a href="#">更多</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li class="dropdown-header">更多</li>
+                                        <li><a href="#">更多</a></li>
+                                        <li><a href="#">更多</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
