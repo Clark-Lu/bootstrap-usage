@@ -21,6 +21,27 @@
 
     <!-- Custom styles for this template -->
     <link href="/home/carousel.css" rel="stylesheet" />
+    <style>
+        *{margin:0;padding:0;list-style:none;}
+        html,body{height:100%;}
+        /* 以下是CSS3样式，适合高版本浏览器 */
+        .Snowflake{animation:linear spin infinite 20s;-webkit-animation:linear spin infinite 20s;-moz-animation:linear spin infinite 20s;pointer-events:none;}
+        @keyframes spin{
+            0% {transform:rotate(0deg);}
+            100% {transform:rotate(359deg);}
+        }
+        @-webkit-keyframes spin{
+            0% {-webkit-transform:rotate(0deg);}
+            100% {-webkit-transform:rotate(359deg);}
+        }
+        @-moz-keyframes spin{
+            0% {-moz-transform:rotate(0deg);}
+            100% {-moz-transform:rotate(359deg);}
+        }
+        body{
+            background-color: #9d9d9d;
+        }
+    </style>
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -167,12 +188,15 @@
 </div><!-- /.container -->
 
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="/assets/js/vendor/jquery.min.js"></script>
 <script src="/dist/js/bootstrap.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="/assets/js/vendor/holder.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/dist/js/snowflake.js"></script>
+<script>
+    createSnow('', 200);
+</script>
 </body>
 </html>
